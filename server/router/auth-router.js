@@ -2,16 +2,13 @@ const express = require("express");
 
 const router = express.Router();
 
+const {home, register} = require("../controllers/auth-controller");
 
 
 
-router.route("/").get( (req, res)=> {
-    res.status(200).send("Welcome to the anish backend website");
-})
+router.route("/").get(home);
 
-router.route("/register").get( (req, res)=> {
-    res.status(200).send("Welcome to the anish register page");
-})
+router.route("/register").get(register)
 
 
 
