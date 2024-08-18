@@ -21,7 +21,7 @@ const userSchema = new mongoose.Schema({
         type: Boolean,
         default: false,
     },
-    courses: {
+    course: {
         type: [String],
         enum: ['dancing', 'photography', 'videoediting', 'digitalmarketing'],
         default: [],  // Defaults to an empty array if no courses are selected
